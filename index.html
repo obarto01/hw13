@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Company/Ticker Finder</title>
+<style type="text/css">
+  @media only screen and (max-width: 1080px)
+  {
+    html,body {font-size: 125%; margin: 0;}
+  }
+  @media only screen and (min-width: 1081px)
+  {
+    html,body {font-size: 112%; margin: 0;}
+  }
+
+  header
+  {
+    width: 100%;
+    height: 15%;
+    top: 0;
+    background-color: blue;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 0;
+  }
+
+</style>	
+</head>
+
+<header style="margin-left: 0">
+    Company <--> Stock Ticker
+</header>
+
+<body>
+  <div style="margin-left: 2%">
+    <h2> Enter a Company or Stock Ticker </h2>
+    <form method="get" action="http://localhost:8080">
+      <input type="radio" id="Company" name="title" value="Company" checked="Company">
+      <label for="Company'">Company</label><br>
+      <input type="radio" id="Ticker" name="title" value="Ticker">
+      <label for="Ticker'">Stock Ticker</label><br> <br/>
+      Enter Name or Ticker Here: <input type="text" name="user_inpt"> <br/>
+      <input type="submit">
+    </form>
+  </div>
+</body>
+
+</html>
